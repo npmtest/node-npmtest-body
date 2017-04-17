@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for node-npmtest-body/body/parse-arguments.js</title>
+    <title>Code coverage report for node-npmtest-body/node_modules/body/any.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,23 +194,23 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-body">npmtest-body (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-body/body/parse-arguments.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-body/node_modules/body/any.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">20% <small>(3 / 15)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">40.91% <small>(9 / 22)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">0% <small>(0 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">0% <small>(0 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 1)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">20% <small>(3 / 15)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">40.91% <small>(9 / 22)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-body/body/</a> &#187; parse-arguments.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-body/node_modules/body/</a> &#187; any.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -245,73 +245,97 @@
 29
 30
 31
-32</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+32
+33
+34
+35
+36
+37
+38
+39
+40</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">module.exports = parseArguments
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var TypedError = require("error/typed")
 &nbsp;
-<span class="fstat-no" title="function not covered" >function isWritable(stream) {</span>
-<span class="cstat-no" title="statement not covered" >    return typeof stream.write === "function" &amp;&amp;</span>
-        typeof stream.end === "function"
-}
+var parseArguments = require("./parse-arguments.js")
+var jsonBody = require("./json.js")
+var formBody = require("./form.js")
 &nbsp;
-<span class="fstat-no" title="function not covered" >function parseArguments(req, res, opts, callback) {</span>
-    // (req, cb)
-<span class="cstat-no" title="statement not covered" >    if (typeof res === "function") {</span>
-<span class="cstat-no" title="statement not covered" >        callback = res</span>
-<span class="cstat-no" title="statement not covered" >        opts = {}</span>
-<span class="cstat-no" title="statement not covered" >        res = null</span>
+var jsonType = "application/json"
+var formType = "application/x-www-form-urlencoded"
+var INVALID_CONTENT_TYPE = TypedError({
+    message: "Could not parse content type header: {contentType}",
+    type: "invalid.content.type",
+    statusCode: 415,
+    contentType: null
+})
+&nbsp;
+module.exports = anyBody
+&nbsp;
+<span class="fstat-no" title="function not covered" >function anyBody(req, res, opts, callback) {</span>
+<span class="cstat-no" title="statement not covered" >    var args = parseArguments(req, res, opts, callback)</span>
+<span class="cstat-no" title="statement not covered" >    req = args.req</span>
+<span class="cstat-no" title="statement not covered" >    res = args.res</span>
+<span class="cstat-no" title="statement not covered" >    opts = args.opts</span>
+<span class="cstat-no" title="statement not covered" >    callback = args.callback</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (!callback) {</span>
+<span class="cstat-no" title="statement not covered" >        return anyBody.bind(null, req, res, opts)</span>
     }
 &nbsp;
-    // (req, res, cb)
-<span class="cstat-no" title="statement not covered" >    if (typeof opts === "function") {</span>
-<span class="cstat-no" title="statement not covered" >        callback = opts</span>
-<span class="cstat-no" title="statement not covered" >        opts = {}</span>
-    }
+<span class="cstat-no" title="statement not covered" >    var contentType = req.headers["content-type"] || ""</span>
 &nbsp;
-    // (req, opts, cb)
-<span class="cstat-no" title="statement not covered" >    if (res &amp;&amp; !isWritable(res)) {</span>
-<span class="cstat-no" title="statement not covered" >        opts = res</span>
-<span class="cstat-no" title="statement not covered" >        res = null</span>
+<span class="cstat-no" title="statement not covered" >    if (contentType.indexOf(jsonType) !== -1) {</span>
+<span class="cstat-no" title="statement not covered" >        jsonBody(req, res, opts, callback)</span>
+    } else <span class="cstat-no" title="statement not covered" >if (contentType.indexOf(formType) !== -1) {</span>
+<span class="cstat-no" title="statement not covered" >        formBody(req, res, opts, callback)</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >        callback(INVALID_CONTENT_TYPE({contentType: contentType}))</span>
     }
-&nbsp;
-    // default (req, res, opts, cb)
-<span class="cstat-no" title="statement not covered" >    return { req: req, res: res, opts: opts, callback: callback }</span>
 }
 &nbsp;
 &nbsp;</pre></td></tr>
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 21:33:28 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 15:08:52 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
