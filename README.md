@@ -1,4 +1,7 @@
-# test coverage for  [body (v5.1.0)](https://github.com/Raynos/body)  [![npm package](https://img.shields.io/npm/v/npmtest-body.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-body) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-body.svg)](https://travis-ci.org/npmtest/node-npmtest-body)
+# npmtest-body
+
+#### basic test coverage for  [body (v5.1.0)](https://github.com/Raynos/body)  [![npm package](https://img.shields.io/npm/v/npmtest-body.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-body) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-body.svg)](https://travis-ci.org/npmtest/node-npmtest-body)
+
 #### Body parsing
 
 [![NPM](https://nodei.co/npm/body.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/body)
@@ -87,7 +90,8 @@
     "scripts": {
         "test": "node ./test/index.js"
     },
-    "version": "5.1.0"
+    "version": "5.1.0",
+    "bin": {}
 }
 ```
 
